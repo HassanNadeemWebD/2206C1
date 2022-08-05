@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    font-style: oblique; 
+    /* text-align: center; */
+}
+
+
+
+
+h1,h2 {
+    font-style: italic;
+    background-color: red;
+   
+  }
+  #batch {
+    background-color: blanchedalmond;
+    color: rgb(70, 70, 22);
+  }
+  .para1 {
+    color: brown;
+    font-size: 32px;
+    background-color: rgb(116, 102, 129);
+  }
+a:link{
+  color: blue;
+}
+  a:visited{
+    color: red;
+  }
+  .square{
+    border: 5px solid brown;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: brown; */
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    /* border-radius: 100px; */
+    text-align: center;
+    padding: 5px;
+  }
+  .square:hover , h1:hover{
+    background-color: aqua;
+    border: 5px dotted red;
+  } 
+  .main{
+    color: coral;
+
+  }
+  .demo{
+    text-align: justify;
+    margin: 15px;
+  }
+  #instagram{
+    text-decoration: none;
+  }

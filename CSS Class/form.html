@@ -6,42 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
   </head>
+  
+  <style>
+    fieldset{
+      background-color: aqua;
+    }
+    .btn{
+      background-color: blueviolet;
+      padding: 10px;
+      border-radius: 10px;
+    margin-left: 5%;
+    width: 15%;
+    color: aliceblue;
+    font-weight: bolder;
+    transition: 2s all ease-in-out;
+    }
+    .btn:hover{
+
+      background-color: black;
+      transform: scale(1.1) ;
+      cursor: pointer;
+
+
+
+    }
+    .btn:active{
+
+background-color: rgb(232, 23, 23);
+color: aliceblue;
+
+
+
+}
+    input:focus{
+    background-color: rgb(167, 93, 93);
+    /* border: red; */
+    color: white;
+    }
+  </style>
   <body>
     <form action="index.html">
-        <fieldset>
-        <legend> <h2> Registration Form </h2></legend>
-      <table>
-        <tr>
-          <td><label for="fname"> First Name</label></td>
-          <td><input type="text" name="fname" id="fname" minlength="3" /></td>
-        </tr>
-        <tr>
-          <td><label for="lname"> Last Name</label></td>
-          <td><input type="text" name="lname" id="lname" required placeholder="Last Name" /></td>
-        </tr>
-        <tr>
-          <td><label for="email"> Email</label></td>    
-          <td><input type="email" name="useremail" id="email" /></td>
-        </tr>
-        <tr>
+      <fieldset>
+        <legend><h2>Registration Form</h2></legend>
+        <table>
+          <tr>
+            <td><label for="fname"> First Name</label></td>
+            <td><input type="text" name="fname" id="fname" minlength="3" /></td>
+          </tr>
+          <tr>
+            <td><label for="lname"> Last Name</label></td>
+            <td>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                required
+                placeholder="Last Name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>
+              <input type="radio" name="gender" value="male" id="male" /><label
+                for="male"
+                >Male</label
+              >
+              <input
+                type="radio"
+                name="gender"
+                value="female"
+                id="female"
+              /><label for="female">Female</label>
+              <input
+                type="radio"
+                name="gender"
+                value="others"
+                id="others"
+              /><label for="others">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email"> Email</label></td>
+            <td><input type="email" name="useremail" id="email" /></td>
+          </tr>
+          <tr>
             <td><label for="password"> Password </label></td>
-            <td><input type="password" name="userpassword" id="password" minlength="6" /></td>
+            <td>
+              <input
+                type="password"
+                name="userpassword"
+                id="password"
+                minlength="6"
+              />
+            </td>
           </tr>
           <tr>
             <td><label for="contact"> Contact</label></td>
-            <td><input type="tel" name="usercontact" id="contact"  minlength="11"  /></td>
+            <td>
+              <input
+                type="tel"
+                name="usercontact"
+                id="contact"
+                maxlength="11"
+              />
+            </td>
           </tr>
           <tr>
             <td>Country</td>
-            <td> <select name="country" id="">
-                <option value="Pakistan">Pakistan</option>
-                <option value="Pakistan">Pakistan</option>
-            </select> </td>
+            <td>
+              <select name="country" id="">
+                <option value="india">Pakistan</option>
+                <option value="Pakistan">India</option>
+              </select>
+            </td>
           </tr>
+          <tr>
+            <td>Hobbies</td>
+            <td>
+              <input
+                type="checkbox"
+                name="hobbies"
+                value="cricket"
+                id="cricket"
+              /><label for="cricket">Cricket</label> <br>
+              <input
+              type="checkbox"
+              name="hobbies"
+              value="football"
+              id="football"
+            /><label for="football">Football</label><br>
+            <input
+            type="checkbox"
+            name="hobbies"
+            value="basketball"
+            id="basketball"
+          /><label for="basketball">Basketball</label>
+            </td>
+          </tr>
+          <tr>
+<td>
+  <label for="comment">Comments</label>
+  <td> <textarea name="comment" id="comment" cols="24" rows="5" placeholder="Write something"></textarea></td>
+</td>
 
-      </table>
-      <button type="submit">Submit</button>
-    </fieldset>
+          </tr>
+        </table>
+        <button class="btn" type="submit">Submit</button>
+      </fieldset>
     </form>
 
   </body>

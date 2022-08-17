@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+  </head>
+  <style>
+    video {
+      display: block;
+      margin: auto;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bolder;
+      background-color: rgb(139, 47, 224);
+      padding: 10px;
+      border-radius: 5px;
+    }
+    button {
+      background-color: rgb(139, 47, 224);
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+  <body>
+    <audio src="audio/audio.mp3" controls autoplay muted loop></audio>
+    <video src="videos/video.mp4" width="400" height="300" autoplay></video>
+    <video width="400" height="300">
+      <source src="audio/audio.mp3" type="video/mp3" />
+      <source src="videos/video.mp4" type="video/mp4" />
+
+      unspported video
+    </video>
+    <!-- <iframe src="" frameborder="0"></iframe> -->
+    <iframe allow="autoplay"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/lAOkx2yZESY?autoplay=1&controls=0"
+      frameborder="5"
+    ></iframe>
+
+    <!-- <video src="video/puppy.mp4"
+ 
+    width="400" height="300"> -->
+    <img width="400" height="300" src="ACE Option1-04.png" alt="" />
+    <a href="ACE Option1-04.png" download="aptech">Download</a>
+    <div style="display: flex; justify-content: center">
+      <iframe
+        width="400"
+        height="400"
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=karachi+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ><a href="https://www.maps.ie/distance-area-calculator.html"
+          >measure area map</a
+        ></iframe
+      >
+    </div>
+  </body>
+</html>

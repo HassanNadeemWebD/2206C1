@@ -16,7 +16,11 @@ let marksObtained = prompt("Enter your Obtained Marks");
 let totalMarks =  prompt("Enter your Total Marks") ; 
 let perc = (marksObtained/totalMarks)*100;
 
-document.write( "Your % \n" +Math.round(perc) + "\n");
+document.write( "Your % \n Hassan" +parseInt(perc) + "\n");
+
+console.log( "Your % \n Hassan" +"\n"+parseInt(perc));
+
+
 if (perc >= 80) {
 
     document.write("A-One")

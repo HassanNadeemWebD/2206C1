@@ -53,15 +53,18 @@ console.log(obj)
 document.write(obj)
 document.write(obj.Bio.hobbies[1])
 
-let myJSON = JSON.stringify(obj);
-// let htmlElem = document.getElementById('json').innerHTML =myJSON ;
-// htmlElem = myJSON
-// console.log(htmlElem)
+//let myJSON = JSON.stringify(obj);
+// document.write(myJSON)
 
 
-document.write(myJSON);
+
+document.getElementById("json").innerHTML=JSON.stringify(obj);
+// document.getElementById("demo").innerHTML = myJSON;
+
+
+// document.write(myJSON);
 console.log(myJSON);
 console.log(JSON.parse(myJSON));
-document.write(JSON.parse(myJSON))
+// document.write(JSON.parse(myJSON))
 
 

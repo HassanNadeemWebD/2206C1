@@ -57,8 +57,8 @@ if (userInput.length == 1) {
     }
     else {
         document.write(userInput + " " + "is not a vowel")
-        
-        
+
+
 
     }
 
@@ -68,7 +68,7 @@ if (userInput.length == 1) {
 else {
 
     document.write("Please Enter 1 Character Only")
-    document.write(" \t"+ userInput + "\t " + "having" +" " + userInput.length + " characters")
-    console.log(" \t"+ userInput + "\t " + "having" +"\n " + userInput.length + " characters")
+    document.write(" \t" + userInput + "\t " + "having" + " " + userInput.length + " characters")
+    console.log(" \t" + userInput + "\t " + "having" + "\n " + userInput.length + " characters")
 
 }

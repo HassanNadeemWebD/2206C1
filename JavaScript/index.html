@@ -20,6 +20,12 @@
   </head>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
+body{
+  background-image: linear-gradient(135deg, rgb(221, 18, 18) 0%, #2196f3 100%);
+  background-repeat:  no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
     * {
       font-family: "Roboto", sans-serif;
@@ -70,7 +76,7 @@
 <p class="mypara">hello</p> -->
 
     <div id="modal">
-      <h1>Login Successful</h1>
+      <h1 >Login Successful</h1>
     </div>
 
     <form action="">
@@ -80,7 +86,7 @@
       <input type="checkbox" onclick="showPassword()" > show Password
       <button onclick="login()" > Login</button>
     </form>
-<h1 >Welcome <span id="user" ></span></h1>
+<h1  >Welcome <span id="user" ></span></h1>
     <script src="dom.js"></script>
   </body>
   <style>
@@ -103,6 +109,7 @@
       padding-top: 80px;
       box-shadow: 9px 9px 22px grey;
       display: none;
+      /* animation-iteration-count: */
     }
   </style>
 </html>

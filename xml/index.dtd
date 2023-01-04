@@ -1,0 +1,12 @@
+<!ELEMENT Emails (B:Email )>
+<!ELEMENT B:Email (B:To , B:from , B:subject , B:content )>
+<!ELEMENT B:To (#PCDATA)>
+<!ELEMENT B:from (#PCDATA)>
+<!ELEMENT B:subject (#PCDATA)>
+<!ELEMENT B:content (#PCDATA)>
+<!-- <!ELEMENT  B:date (#PCDATA)> -->
+<!ATTLIST Emails xmlns:B CDATA #REQUIRED>
+<!ATTLIST Emails xmlns:A CDATA #REQUIRED>
+<!ATTLIST B:Email date (Nov|Dec|Jan |Aug) " Jan" >
+
+<!ENTITY start SYSTEM "Helllo ! How are You ? Hope You Are Doing Well">

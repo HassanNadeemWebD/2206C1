@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Prolog -->
+
+<!DOCTYPE Emails SYSTEM "index.dtd" [
+
+]>
+
+
+<Emails xmlns:B= "https://www.gmail.com" xmlns:A= "https://www.yahoo.com"  >
+
+<B:Email date="Aug" >
+    <B:To>Hassannadeem@aptech.com</B:To>
+    <B:from> bilal@aptech.com </B:from>
+    <B:subject>Course Outline for       react.js</B:subject>
+
+    <B:content>&start; you are fired </B:content>
+    <!-- <B:date>30-12-2022</B:date> -->
+
+
+</B:Email>
+<!-- <A:Email>
+    <A:To>Hassannadeem@aptech.com</A:To>
+    <A:from> bilal@aptech.com </A:from>
+    <A:subject>Course Outline for       react.js</A:subject>
+
+    <A:content>Helllo ! How are You ?</A:content>
+    <A:date>30-12-2022</A:date>
+
+
+</A:Email> -->
+
+</Emails>

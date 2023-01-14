@@ -1,24 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-stylesheet href="style.css" type="text/css"?> -->
+<?xml-stylesheet href="index.xsl" type="text/xsl"?>
 <!-- Prolog -->
 
 
-<!-- <!DOCTYPE Emails SYSTEM "index.dtd" [
+<Emails>
 
-]> -->
+    <Email id="Aug">
+        <To id="dBlock">Hassannadeem@aptech.com</To>
+        <from id="75" class="dBlock"> bilal@aptech.com </from>
+        <subject>Course Outline for react.js</subject>
 
-
-<Emails xmlns:B= "https://www.gmail.com" xmlns:A= "https://www.yahoo.com"  >
-
-<B:Email date="Aug" >
-    <B:To>Hassannadeem@aptech.com</B:To>
-    <B:from id = "75"> bilal@aptech.com </B:from>
-    <B:subject>Course Outline for       react.js</B:subject>
-
-    <B:content> you are fired </B:content>
-    <B:date>30-12-2022</B:date>
+        <content class="dBlock"> you are fired </content>
+        <date>30-12-2022</date>
 
 
-</B:Email>
+    </Email>
+    <Email id="Aug">
+        <To class="dBlock">Hassannadeem@aptech.com</To>
+        <from id="75"> bilal@aptech.com </from>
+        <subject>Course Outline for react.js</subject>
 
+        <content> you are fired </content>
+        <date>30-12-2022</date>
+
+
+    </Email>
+    <Email id="Aug">
+        <To class="dBlock">Hassannadeem@aptech.com</To>
+        <from id="75"> bilal@aptech.com </from>
+        <subject>Course Outline for react.js</subject>
+
+        <content> you are fired </content>
+        <date>30-12-2022</date>
+
+
+    </Email>
+    <Email id="Aug">
+        <To class="dBlock">Hassannadeem@aptech.com</To>
+        <from id="75"> bilal@aptech.com </from>
+        <subject>Course Outline for react.js</subject>
+
+        <content> you are fired </content>
+        <date>30-12-2022</date>
+
+
+    </Email>
+    <Email id="Aug">
+        <To class="dBlock">Hassannadeem@aptech.com</To>
+        <from id="75"> bilal@aptech.com </from>
+        <subject>Course Outline for react.js</subject>
+
+        <content> you are fired </content>
+        <date>30-12-2022</date>
+
+
+    </Email>
+    <Email id="Aug">
+        <To class="dBlock">Hassannadeem@aptech.com</To>
+        <from id="75"> bilal@aptech.com </from>
+        <subject>Course Outline for react.js</subject>
+
+        <content> you are fired </content>
+        <date>30-12-2022</date>
+
+
+    </Email>
+    <Email id="Aug">
+        <To class="dBlock">Hassannadeem@aptech.com</To>
+        <from id="75"> bilal@aptech.com </from>
+        <subject>Course Outline for react.js</subject>
+
+        <content> you are fired </content>
+        <date>30-12-2022</date>
+
+
+    </Email>
 
 </Emails>

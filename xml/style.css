@@ -1,0 +1,13 @@
+*{
+
+background-color: aqua;
+
+}
+
+#dBlock , Email{
+    display: block;
+    text-align: center;
+
+background-color: red;
+
+}

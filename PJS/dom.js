@@ -13,4 +13,38 @@
 
 // console.log(document.querySelector("#title").innerHTML);
 // console.log(document.querySelector('.heading'));
-console.log(title.innerText);
+// console.log(title.innerText);
+
+
+
+
+// Fat Arrow Function
+let concat = () => {
+
+    let firstName = document.getElementById("fname").value;
+    let lastName = lname.value;
+    let fullName = `${firstName}${lastName}`;
+    let displayName = document.getElementById("fullname")
+
+    displayName.innerText += " " + fullName;
+    displayName.style.display = "block"
+
+
+    // console.log(fullName);
+
+
+
+}
+document.getElementById("concatBtn").addEventListener("click", concat)
+
+document.getElementById("style").addEventListener("click", () => {
+
+    let displayName = document.getElementById("fullname");
+    displayName.classList.toggle("fullname")
+
+
+
+})
+
+
+// console.log(); 

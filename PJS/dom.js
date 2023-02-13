@@ -46,5 +46,82 @@ document.getElementById("style").addEventListener("click", () => {
 
 })
 
+let changeTxt = () => {
+    document.getElementById('title').innerHTML = "Double Click"
+
+    console.log("Double Click");
+    let displayName = document.getElementById("fullname");
+    displayName.classList.toggle("fullname")
+
+
+}
+
+
+let keyUp = () => {
+
+    alert(document.getElementById("confirmPass").value)
+
+
+
+}
+
+let keyDown = () => {
+
+    alert(document.getElementById("confirmPass").value)
+
+
+
+}
+
+let keyPress = () => {
+
+    alert(document.getElementById("confirmPass").value)
+
+
+
+}
+let onChange = () => {
+
+    console.log(document.getElementById("pass").value)
+
+
+
+}
+
+let checkPass = () => {
+    let pass = document.getElementById("pass");
+    let confirmPass = document.getElementById("confirmPass");
+    // console.log(pass);
+    // console.log(confirmPass);
+    if (pass.value == confirmPass.value) {
+
+
+        pass.classList.remove("error")
+        confirmPass.classList.remove("error")
+
+        pass.classList.add("success")
+        confirmPass.classList.add("success")
+
+
+
+
+    } else {
+
+
+        pass.classList.remove("success")
+        confirmPass.classList.remove("success")
+        pass.classList.add("error")
+        confirmPass.classList.add("error")
+
+
+    }
+
+}
+
+
+
+
+
+
 
 // console.log(); 

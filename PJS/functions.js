@@ -31,8 +31,8 @@
 //     // document.write(x + y); 
 //     sum = x + y;
 //     // return x + y;
-//     return sum;
-
+//     return [sum,2,1];
+//     // return 1;
 // }
 
 // let num1 =parseInt(prompt("Enter 1st Number")) ;
@@ -154,11 +154,35 @@ function ConstructObj(Name, gender, contact, hobbie1, hobbie2, hobbie3, indoor1,
 
 }
 
-let objZain = 
-new ConstructObj("Zain", "Male", "0312654454", "cricket", "football", "facebook", "ludo", "carrom", "squash", "Hockey", "hathi ke sundh", "brf pani");
+let objZain =
+    new ConstructObj("Zain", "Male", "0312654454", "cricket", "football", "facebook", "ludo", "carrom", "squash", "Hockey", "hathi ke sundh", "brf pani");
 
 // console.log(objZain);
-let objUzair = 
-new ConstructObj("Uzair", "Male", "0312654896", "cricket", "football", "facebook", "ludo", "carrom", "squash", "Hockey", "hathi ke sundh", "brf pani")
+let objUzair =
+    new ConstructObj("Uzair", "Male", "0312654896", "cricket", "football", "facebook", "ludo", "carrom", "squash", "Hockey", "hathi ke sundh", "brf pani")
 
 console.log(objUzair);
+
+
+let newObj = {
+
+
+    add : (x, y) => {
+
+        // document.write(x + y); 
+        sum = x + y;
+        // return x + y;
+        return sum;
+        // return 1;
+    }
+
+}
+
+
+let res = newObj.add(2, 5);
+console.log(res);
+
+console.log(Math.abs(-55)); 
+console.log(Math.trunc(Math.random())); 
+
+

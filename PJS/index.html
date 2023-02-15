@@ -23,22 +23,29 @@
 
 
     }
-.success{
 
-border: 3px solid green ;
+    .success {
 
-
-}
-.error{
-
-border: 3px solid red ;
+        border: 3px solid green;
 
 
-}
+    }
 
+    .error {
+
+        border: 3px solid red;
+
+
+    }
 </style>
 
 <body>
+    <div class="container">
+        <h1 id="greet"></h1>
+        <h2 id="calculate"></h2>
+        <button class="btn btn-danger mt-4" id="calc">calculate</button>
+        <button class="btn btn-success mt-4" id="hi">Say Hi !</button>
+    </div>
     <h1 id="title" ondblclick="changeTxt()">Aptech Learning</h1>
 
     <h1 class="heading">DOCUMENT OBJECT MODEL</h1>
@@ -61,10 +68,10 @@ border: 3px solid red ;
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" onchange="onChange()" id="pass" >
+            <input type="password" class="form-control" onchange="onChange()" id="pass">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1"  >Confirm Password</label>
+            <label for="exampleInputPassword1">Confirm Password</label>
             <input type="password" class="form-control " onkeyup="checkPass()" id="confirmPass">
         </div>
         <!-- <div class="mb-3 form-check">
@@ -114,8 +121,6 @@ border: 3px solid red ;
 
 
 </script>
-
-
 
 
 <!-- <script src="dataType.js"></script> -->

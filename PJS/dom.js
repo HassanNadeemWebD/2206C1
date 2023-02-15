@@ -118,6 +118,33 @@ let checkPass = () => {
 
 }
 
+document.getElementById("hi").addEventListener("click", () => {
+
+    document.getElementById("greet").innerHTML += "Hi!"
+
+
+})
+document.getElementById("calc").addEventListener("click", () => {
+
+ 
+
+let webworker = new Worker("worker.js");
+
+console.log(webworker);
+webworker.postMessage("Start Work")
+
+webworker.onmessage = (e)=>{
+
+    console.log(e.data);
+
+    document.getElementById("calculate").innerHTML =e.data
+
+
+}
+
+
+
+})
 
 
 

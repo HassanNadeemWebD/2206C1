@@ -126,29 +126,68 @@ document.getElementById("hi").addEventListener("click", () => {
 })
 document.getElementById("calc").addEventListener("click", () => {
 
- 
-
-let webworker = new Worker("worker.js");
-
-console.log(webworker);
-webworker.postMessage("Start Work")
-
-webworker.onmessage = (e)=>{
-
-    console.log(e.data);
-
-    document.getElementById("calculate").innerHTML =e.data
 
 
-}
+    let webworker = new Worker("worker.js");
+
+    console.log(webworker);
+    webworker.postMessage("Start Work")
+
+    webworker.onmessage = (e) => {
+
+        console.log(e.data);
+
+        document.getElementById("calculate").innerHTML = e.data
+
+
+    }
 
 
 
 })
 
+let element = document.getElementById("img")
+// console.log();
+
+
+element.alt = "aaa";
+element.src = "https://user-images.githubusercontent.com/70473461/92360592-5a3bb800-f0ed-11ea-8dce-dd95b72c7825.png"
+
+
+// function showPass() {
 
 
 
+
+//         let passInput = document.getElementById("pass");
+//         console.log(passInput);
+//         // passInput.type = "text"
+
+
+
+
+// }
+let showPass = () => {
+
+    let passInput = document.getElementById("pass");
+    // console.log(passInput);
+
+    if (passInput.type == "text") {
+
+        passInput.type = "password"
+
+
+    }
+    else {
+
+        passInput.setAttribute("class","success");
+        console.log(passInput);
+        passInput.type = "text";
+
+
+    }
+
+}
 
 
 // console.log(); 

@@ -40,6 +40,7 @@
 </style>
 
 <body>
+    <img height="250px" width="250px" src="" alt=""  id="img">
     <div class="container">
         <h1 id="greet"></h1>
         <h2 id="calculate"></h2>
@@ -58,7 +59,7 @@
     <button id="concatBtn">Concat</button>
 
 
-    <h2 id="fullname">Your Full Name is </h2>
+    <h2 id="fullname" >Your Full Name is </h2>
     <button id="style">Add Style</button>
     <form class="container mt-5">
         <div class="mb-3">
@@ -69,6 +70,7 @@
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
             <input type="password" class="form-control" onchange="onChange()" id="pass">
+            <input type="checkbox" id="show" onclick="showPass()"> Show Password
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1">Confirm Password</label>

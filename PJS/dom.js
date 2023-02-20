@@ -180,7 +180,7 @@ let showPass = () => {
     }
     else {
 
-        passInput.setAttribute("class","success");
+        passInput.setAttribute("class", "success");
         console.log(passInput);
         passInput.type = "text";
 
@@ -188,6 +188,25 @@ let showPass = () => {
     }
 
 }
+
+
+document.getElementById("addElement").addEventListener("click", () => {
+
+    let element= document.createElement("li");
+
+let task = document.getElementById("task").value;
+    let txt = document.createTextNode(task);
+
+   element.appendChild(txt);
+    document.getElementById("container").appendChild(element)
+
+    element.classList.add("success")
+
+
+})
+
+
+
 
 
 // console.log(); 

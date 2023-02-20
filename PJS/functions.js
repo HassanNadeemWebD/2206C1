@@ -167,7 +167,7 @@ console.log(objUzair);
 let newObj = {
 
 
-    add : (x, y) => {
+    add: (x, y) => {
 
         // document.write(x + y); 
         sum = x + y;
@@ -182,7 +182,66 @@ let newObj = {
 let res = newObj.add(2, 5);
 console.log(res);
 
-console.log(Math.abs(-55)); 
-console.log(Math.trunc(Math.random())); 
+console.log(Math.abs(-55));
+console.log(Math.trunc(Math.random()));
+
+
+// setTimeout(() => {
+
+//     console.log("Hello !");
+
+
+
+
+
+
+
+// }, 2000)
+
+
+
+let add = (a, b,) => {
+
+    let sum = a + b;
+    console.log(sum);
+    // showAddition(sum)
+
+
+}
+
+// function showAddition(x) {
+
+//     console.log(x);
+// }
+
+// add(65, 1, showAddition);
+// add(65, 1, showAddition);
+// setInterval(add(65, 1) , 3000)
+
+//  setTimeout(add(65, 1),3000)
+// setTimeout(alert("Hello !"),5000)
+
+let welcome = () => {
+
+    let username = prompt("Enter Your Name");
+    console.log("Welcome " + username);
+
+}
+
+setInterval(() => {
+
+    // add(56,60)
+
+
+    welcome()
+
+
+
+
+}, 2000)
+
+
+
+
 
 

@@ -1,0 +1,23 @@
+use 2206C1;
+select * from customers  join orders on customers.customerID =  orders.customerID order by customers.customerID;
+
+select * from customers left join orders on customers.customerID =  orders.customerID order by customers.customerID;
+
+select orderID, orders.customerID , customerName ,city from  orders right join customers   
+on customers.customerID =  orders.customerID where orders.customerID = 1 order by customers.customerID ;
+
+use classicmodels;
+select * from 
+orders inner join customers on customers.customerNumber= orders.customerNumber where orders.customerNumber = 103;
+
+select orderNumber , orders.customerNumber , orderDate ,contactFirstName from 
+orders inner join customers on customers.customerNumber= orders.customerNumber ;
+
+select orderNumber , customers.customerNumber , orderDate ,contactFirstName from 
+customers left join orders  on customers.customerNumber= orders.customerNumber;
+select count(orderNumber) from orders;
+select customerNumber ,count(orderNumber) as  OrderCount from orders group by customerNumber order by OrderCount desc limit 3;
+select max(amount) from payments;
+select min(amount) from payments;
+select avg(amount) from payments;
+select sum(amount) from payments;
